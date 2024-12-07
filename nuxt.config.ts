@@ -11,4 +11,9 @@ export default defineNuxtConfig({
   supabase: {
     redirect: true,
   },
+  runtimeConfig: {
+    public: {
+      baseUrl: process.env.BASE_URL ?? 'http://localhost:3000',
+    },
+  },
 })
